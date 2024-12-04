@@ -1,0 +1,16 @@
+.justify-around {
+  justify-content: space-around;
+}
+.items-center {
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .flex {
+    flex-direction: column;
+  }
+}
+
+.my-5 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
