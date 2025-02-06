@@ -80,7 +80,8 @@ const ShowDateTime = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setupNexPrayer();
-      setToday(moment().format("Do  MMMM  YYYY | h:mm a"));
+      moment.locale("ar-sa");
+      setToday(moment().format("dddd, MM/YY | h:mm a"));
     }, 1000);
 
     return () => {
